@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Campus Customs - Resolved Board Capture</title>
+  <style>
+    :root { font-family: Arial, sans-serif; color: #302b25; background: #f2ede5; }
+    * { box-sizing: border-box; }
+    body { margin: 0; padding: 30px; }
+    .intro { max-width: 1180px; margin: 0 auto 24px; }
+    .eyebrow { color: #91775e; font-size: 11px; letter-spacing: .12em; text-transform: uppercase; }
+    h1, h2, h3 { font-family: Georgia, serif; }
+    h1 { margin-bottom: 6px; color: #46372c; }
+    .intro p { color: #756c63; }
+    .capture { max-width: 1180px; margin: 24px auto; padding: 0; border: 1px solid #d9cdbc; border-radius: 12px; overflow: hidden; background: #fbf8f3; box-shadow: 7px 7px 0 #e7dccd; }
+    .capture-label { padding: 11px 17px; color: #80684e; background: #ece2d1; font: 11px monospace; letter-spacing: .08em; text-transform: uppercase; }
+    .board { display: grid; grid-template-columns: 220px 1fr; min-height: 390px; }
+    .rail { padding: 19px; border-right: 1px solid #ded4c6; background: #f8f4ed; }
+    .brand { display: flex; align-items: center; gap: 9px; margin-bottom: 26px; color: #46372c; font-weight: 700; }
+    .mark { display: grid; place-items: center; width: 29px; height: 29px; border-radius: 8px; color: #fffaf1; background: #46372c; font: 10px monospace; }
+    .ticket { margin: 9px 0; padding: 11px; border: 1px solid #ded4c6; border-radius: 8px; background: #fffaf4; }
+    .ticket.active { border-color: #9d7650; box-shadow: inset 3px 0 #9d7650; }
+    .ticket small, .muted { color: #957c63; font-size: 10px; }
+    .ticket strong { display: block; margin: 8px 0 4px; font-size: 12px; }
+    .resolved { color: #5e7c58; }
+    .detail { padding: 23px 27px; }
+    .detail-top { display: flex; justify-content: space-between; gap: 16px; border-bottom: 1px solid #d9cdbc; }
+    .detail-top h2 { margin: 5px 0 7px; color: #3b3229; }
+    .pill { align-self: start; padding: 8px 11px; border: 1px solid #c9ddc2; border-radius: 99px; color: #5e7c58; background: #e4eee0; font: 10px monospace; text-transform: uppercase; }
+    .facts { display: grid; grid-template-columns: 1fr 1fr; gap: 11px; margin: 18px 0; }
+    .fact { padding: 12px; border-left: 2px solid #c3a27f; background: #ece4d9; }
+    .fact label { display: block; margin-bottom: 5px; color: #927a61; font: 10px monospace; text-transform: uppercase; }
+    .fact span { font-size: 12px; }
+    .room { padding: 17px; border: 1px solid #ddd1c1; border-radius: 9px; background: #fffdf9; }
+    .room h3 { display: inline; margin-right: 15px; font-size: 16px; }
+    .room .quiet { color: #678263; font: 10px monospace; text-transform: uppercase; }
+    .agents { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; margin-top: 15px; }
+    .agent { padding: 10px; border: 1px solid #e2d9ce; border-radius: 7px; background: #f6f1e9; }
+    .agent b { display: block; color: #43392f; font-size: 11px; }
+    .agent span { display: block; margin-top: 5px; color: #83766a; font-size: 10px; line-height: 1.35; }
+    .timeline { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 18px; }
+    .event { padding: 8px 10px; border-radius: 6px; color: #695c4f; background: #eee5d9; font-size: 10px; }
+    .cash-note { max-width: 1180px; margin: 34px auto 0; padding: 18px; border: 1px solid #c9ddc2; border-radius: 10px; background: #edf3e9; }
+    .cash-note strong { color: #557052; }
+    .real-capture { max-width: 1180px; margin: 24px auto; padding: 16px; border: 1px solid #d9cdbc; border-radius: 12px; background: #fbf8f3; box-shadow: 7px 7px 0 #e7dccd; }
+    .real-capture h2 { margin: 4px 0 14px; color: #46372c; font-size: 18px; }
+    .real-capture img { display: block; width: 100%; height: auto; border: 1px solid #d9cdbc; border-radius: 8px; }
+    @media (max-width: 760px) { body { padding: 15px; } .board { grid-template-columns: 1fr; } .rail { border-right: 0; border-bottom: 1px solid #ded4c6; } .agents { grid-template-columns: repeat(2, 1fr); } .facts { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <div class="intro">
+    <div class="eyebrow">Campus Customs / Problem 9 evidence</div>
+    <h1>Resolved board captures</h1>
+    <p>Three self-contained snapshots of the React dashboard after the full run and human resolution. Each capture preserves the board's ticket list, selected ticket, resolved status, agent room, and activity summary.</p>
+  </div>
+
+  <section class="real-capture"><h2>Actual React/Vite screenshot - Ticket 101</h2><img src="react_board_ticket_101.png" alt="React dashboard showing resolved ticket 101"></section>
+  <section class="real-capture"><h2>Actual React/Vite screenshot - Ticket 102</h2><img src="react_board_ticket_102.png" alt="React dashboard showing resolved ticket 102"></section>
+  <section class="real-capture"><h2>Actual React/Vite screenshot - Ticket 103</h2><img src="react_board_ticket_103.png" alt="React dashboard showing resolved ticket 103"></section>
+
+  <section class="capture">
+    <div class="capture-label">Board capture - Ticket 101 - resolved</div>
+    <div class="board"><aside class="rail"><div class="brand"><span class="mark">CC</span> Campus Customs</div><div class="ticket active"><small>#101 / customer order</small><strong>Bulldog tee</strong><span class="muted">Tauhid Zaman</span><br><span class="resolved">Resolved</span></div><div class="ticket"><small>#102</small><strong>Rent due</strong><span class="muted">Resolved</span></div><div class="ticket"><small>#103</small><strong>Bulk hoodie discount</strong><span class="muted">Resolved</span></div></aside><main class="detail"><div class="detail-top"><div><div class="eyebrow">Ticket #101 / customer order</div><h2>Bulldog tee</h2><p class="muted">Tauhid Zaman - resolved after human review</p></div><span class="pill">resolved</span></div><div class="facts"><div class="fact"><label>Request</label><span>1 x CC-TEE-WHITE / S</span></div><div class="fact"><label>Decision</label><span>0 in stock; shortfall 1; no shipment promised</span></div></div><div class="room"><h3>The room</h3><span class="quiet">Human checkpoint cleared</span><div class="agents"><div class="agent"><b>Boss</b><span>Coordinated and closed the exception.</span></div><div class="agent"><b>Inventory</b><span>0 in Aisle B; shortfall 1.</span></div><div class="agent"><b>Accounting</b><span>Invoice 501 / $840 reviewed.</span></div><div class="agent"><b>Customer Service</b><span>Unsent status draft prepared.</span></div></div><div class="timeline"><span class="event">inspect_inventory</span><span class="event">get_restock_options</span><span class="event">invoice 501 paid by Human operator</span><span class="event">board status resolved</span></div></div></main></div>
+  </section>
+
+  <section class="capture">
+    <div class="capture-label">Board capture - Ticket 102 - resolved</div>
+    <div class="board"><aside class="rail"><div class="brand"><span class="mark">CC</span> Campus Customs</div><div class="ticket"><small>#101</small><strong>Bulldog tee</strong><span class="muted">Resolved</span></div><div class="ticket active"><small>#102 / rent notice</small><strong>Rent due</strong><span class="muted">Elm City Properties</span><br><span class="resolved">Resolved</span></div><div class="ticket"><small>#103</small><strong>Bulk hoodie discount</strong><span class="muted">Resolved</span></div></aside><main class="detail"><div class="detail-top"><div><div class="eyebrow">Ticket #102 / rent notice</div><h2>Rent due</h2><p class="muted">Elm City Properties - resolved after human confirmation</p></div><span class="pill">resolved</span></div><div class="facts"><div class="fact"><label>Request</label><span>Lease 1 / Chapel Street shop</span></div><div class="fact"><label>Decision</label><span>$2,400 rent paid; no landlord contact</span></div></div><div class="room"><h3>The room</h3><span class="quiet">Human checkpoint cleared</span><div class="agents"><div class="agent"><b>Boss</b><span>Coordinated the approval checkpoint.</span></div><div class="agent"><b>Facilities</b><span>Verified lease and due date.</span></div><div class="agent"><b>Accounting</b><span>Checked payment and cash.</span></div><div class="agent"><b>Human operator</b><span>Confirmed recorded rent payment.</span></div></div><div class="timeline"><span class="event">get_ticket_context</span><span class="event">get_cash_balance</span><span class="event">rent $2,400 confirmed</span><span class="event">board status resolved</span></div></div></main></div>
+  </section>
+
+  <section class="capture">
+    <div class="capture-label">Board capture - Ticket 103 - resolved</div>
+    <div class="board"><aside class="rail"><div class="brand"><span class="mark">CC</span> Campus Customs</div><div class="ticket"><small>#101</small><strong>Bulldog tee</strong><span class="muted">Resolved</span></div><div class="ticket"><small>#102</small><strong>Rent due</strong><span class="muted">Resolved</span></div><div class="ticket active"><small>#103 / price override</small><strong>Bulk hoodie discount</strong><span class="muted">Yale AI Club</span><br><span class="resolved">Resolved</span></div></aside><main class="detail"><div class="detail-top"><div><div class="eyebrow">Ticket #103 / price override</div><h2>Bulk hoodie discount</h2><p class="muted">Yale AI Club - reviewed and resolved</p></div><span class="pill">resolved</span></div><div class="facts"><div class="fact"><label>Request</label><span>20 x CC-HOOD-NAVY / M</span></div><div class="fact"><label>Decision</label><span>8 in stock; shortfall 12; no discount invented</span></div></div><div class="room"><h3>The room</h3><span class="quiet">Human checkpoint cleared</span><div class="agents"><div class="agent"><b>Boss</b><span>Coordinated the evidence review.</span></div><div class="agent"><b>Inventory</b><span>8 in Aisle A; shortfall 12.</span></div><div class="agent"><b>Accounting</b><span>$22 cost / $58 list margin checked.</span></div><div class="agent"><b>Customer Service</b><span>Unsent availability draft prepared.</span></div></div><div class="timeline"><span class="event">inspect_inventory</span><span class="event">get_restock_options</span><span class="event">no cash change</span><span class="event">board status resolved</span></div></div></main></div>
+  </section>
+
+  <div class="cash-note"><strong>Board-wide cash state:</strong> starting checking $3,400.00; ticket 101 -$840.00; ticket 102 -$2,400.00; ticket 103 $0.00; ending checking $160.00.</div>
+</body>
+</html>
